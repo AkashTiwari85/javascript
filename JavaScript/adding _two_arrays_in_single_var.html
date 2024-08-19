@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr1=[];//This is empty arr in html
+        var arr2=[];
+        var arrsum=[];
+        var i;
+        var j;
+        var el1;
+        var el2;
+        el1=parseInt(prompt("enter no of element array 1:",el1));
+        el2=parseInt(prompt("enter no of element array 2:",el2));
+        if(el1==el2)
+        {
+            for( i=0;i<el1;i++)
+            {
+                arr1[i]=parseInt(prompt("enter your array",i,"element",arr1[i]));
+            }
+            for(i=0;i<el1;i++)
+            {
+                document.write(arr1[i],"<br>");
+            }
+            for(j=0;j<el2;j++)
+            {
+                arr2[j]=parseInt(prompt("enter your arr",j,"element",arr2[j]));
+            }
+            for(j=0;j<el2;j++)
+            {
+                document.write(arr2[j],"<br>");
+            }
+            document.write("sum of given arrays is :<br>");
+            for(i=0;i<el1;i++)
+            {
+                arrsum[i]=arr1[i]+arr2[i];
+            }
+             for(i=0;i<el1;i++)
+{
+    document.write( arr1[i],"+",arr2[i],"=",arrsum[i],"<br>");
+
+}
+            }
+        else
+        {
+            document.write("the element of array 1 and array 2 is not same");
+        }
+
+        
+    </script>
+    
+</body>
+</html>
